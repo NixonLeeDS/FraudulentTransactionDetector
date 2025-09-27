@@ -32,5 +32,33 @@ A simple Python-based tool to detect potentially fraudulent transactions using r
     ```
 3. Run app:
    ```bash
-   streamlit run app.py
+   python -m streamlit run app.py
    ```
+
+
+
+
+## Dataset
+This project uses the Credit Card Fraud Detection dataset from Kaggle
+
+Note: The dataset is not included in this repository because it is larger than GitHub’s 100 MB file limit.
+
+How to set it up
+1. Download the dataset from Kaggle:
+https://www.kaggle.com/mlg-ulb/creditcardfraud
+2. Extract the creditcard.csv file.
+3. Place it inside the data/ folder of this project:
+4. Start the app and upload the file through the Streamlit interface, or let the app load it from the data/ folder if configured.
+
+
+
+
+Example Output
+
+-Flagged suspicious transactions in a table view
+-Bar chart comparing flagged vs non-flagged transactions
+- Summary of total fraud cases vs frauds caught by rules
+
+<img width="678" height="455" alt="image" src="https://github.com/user-attachments/assets/438ae3eb-2d59-4507-a1d0-39f9c7f69f73" />
+<img width="694" height="721" alt="image" src="https://github.com/user-attachments/assets/ed99d596-cefc-4833-b126-f422b91c70ee" />
+
