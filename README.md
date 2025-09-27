@@ -23,7 +23,7 @@ A simple Python-based tool to detect potentially fraudulent transactions using r
 ## How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-username>/fraudulent-transaction-detector.git
+   git clone https://github.com/NixonLeeDS/FraudulentTransactionDetector
    cd fraudulent-transaction-detector
    ```
 2. Install dependencies:
