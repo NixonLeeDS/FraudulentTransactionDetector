@@ -7,7 +7,7 @@ from utils import load_data, save_results
 # Streamlit App
 # ---------------------------
 
-st.title("💳 Credit Card Fraud Detector (Rule-Based)")
+st.title("Credit Card Fraud Detector (Rule-Based)")
 
 # File uploader for CSV
 uploaded_file = st.file_uploader("Upload the Kaggle creditcard.csv file", type="csv")
@@ -20,11 +20,11 @@ if uploaded_file:
     df = apply_rules(df)
 
     # Step 3: Show flagged transactions
-    st.subheader("🚨 Flagged Transactions (Rule-Based)")
+    st.subheader(" Flagged Transactions (Rule-Based)")
     st.dataframe(df[df['Potential_Fraud']])
 
     # Step 4: Visualization - Fraud vs Non-Fraud (based on rules)
-    st.subheader("📊 Fraud vs Non-Fraud (Rule-Based)")
+    st.subheader("Fraud vs Non-Fraud (Rule-Based)")
     fig, ax = plt.subplots()
     df['Potential_Fraud'].value_counts().plot(kind='bar', ax=ax)
     ax.set_xticklabels(['Legit', 'Potential Fraud'], rotation=0)
@@ -32,7 +32,7 @@ if uploaded_file:
 
     # Step 5: Compare with true fraud labels in dataset
     if 'Class' in df.columns:
-        st.subheader("✅ Comparison with True Fraud Labels")
+        st.subheader("Comparison with True Fraud Labels")
         true_frauds = df[df['Class'] == 1]
         flagged_frauds = df[(df['Potential_Fraud'] == True) & (df['Class'] == 1)]
 
