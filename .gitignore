@@ -1,0 +1,6 @@
+# Ignore large files
+data/
+*.csv
+*.zip
+outputs/
+venv/
